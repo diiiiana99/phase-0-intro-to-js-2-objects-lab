@@ -2,8 +2,10 @@ const employee = {
     name: "Nemo",
     streetAddress: "42 Wallaby Way, Sydney, Australia"
 }
-function updateEmployeeWithKeyAndValue (employee, streetAddress, newAddress) {
-    const newemployee = {... employee};
+function updateEmployeeWithKeyAndValue (employee, key, value) {
+    const newEmployee = {... employee};
+    newEmployee[key] = value;
+    return newEmployee 
 
 }
 function destructivelyUpdateEmployeeWithKeyAndValue (employee, streetAddress, newAddress) {
